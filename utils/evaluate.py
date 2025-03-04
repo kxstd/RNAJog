@@ -47,7 +47,6 @@ def calculate_cai(rna_seqs, cai_table):
     return cais
 
 def calculate_cai_single(codon, cai_table):
-    # cai_table = pd.read_csv("./codon_usage_freq_table_ecoli.csv")
     aa = cai_table[cai_table.iloc[:, 0] == codon].iloc[:, 1].values[0]
     rate = cai_table[cai_table.iloc[:, 0] == codon].iloc[:, 2].values[0]
     max_rate = cai_table[cai_table.iloc[:, 1] == aa].iloc[:, 2].values.max()

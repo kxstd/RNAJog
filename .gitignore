@@ -1,0 +1,6 @@
+*.log
+/result/*
+/log
+/save/*
+/__MACOSX
+*/__pycache__

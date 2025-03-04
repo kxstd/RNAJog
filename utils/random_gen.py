@@ -49,7 +49,6 @@ def pro2case(seed, aminos):
 
 def cod2case(seed, codons):
     codon_seqs = [[codon[i:i+3].replace("T", "U") for i in range(0, len(codon), 3)] for codon in codons]
-    # ??? 是seqs尾部的padding填充符，求出每个codon_seq的不含填充符的长度
     length = [len(codon_seq) - codon_seq.count("???") for codon_seq in codon_seqs]
     codon_seqs = [[codon if codon != "???" else "[PAD]" for codon in codon_seq] for codon_seq in codon_seqs]
     amino_seqs = [[codon2pro[codon] if codon != "[PAD]" else "[PAD]" for codon in codon_seq] for codon_seq in codon_seqs]

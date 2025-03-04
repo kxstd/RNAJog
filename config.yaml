@@ -1,0 +1,14 @@
+device: "cuda"
+# device: "cpu"
+seed: 0
+max_threads: 64
+
+embedder:
+  model_dir: "./save/embedder_pretrain_weights"
+  embedding_size: 768
+
+actor:
+  hidden_size: 256
+  context_size: 256
+critic:
+  hidden_size: 256
