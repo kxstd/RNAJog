@@ -69,4 +69,8 @@ id,sample_method,length,mfe_cai_weight,mfe,cai,seq
 0,input,300,-1,-125,0.89,UAUGCGUAGC...
 1,sample,300,0.15,-142,0.91,UAUGCGUAGC...
 ```
-
+### Citation
+If you find the tool useful in your research, please cite our paper:
+```
+Jiaqi Huang et al. Fast Multi-objective RNA Optimization with Autoregressive Reinforcement Learning. In submisson.
+```
