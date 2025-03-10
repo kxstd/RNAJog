@@ -45,7 +45,7 @@ RNAJog provides multiple options to customize the optimization process. Below ar
 ### Running RNA Optimization
 To optimize an RNA sequence, use:
 ```bash
-python run.py --input_type rna --data_path data/test/rna.txt --mfe_weight 0.15 --device cuda --model RNAJog
+python run.py --input_type rna --data_path data/test/rna.txt --mfe_weight 0.15 --device cuda --model RNAJog --ban_seqs "CUCGAG;GCUCUUC"
 ```
 For protein sequence optimization:
 ```bash
