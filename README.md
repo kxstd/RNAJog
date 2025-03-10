@@ -1,5 +1,4 @@
 # RNAJog：Fast Multi-objective RNA Optimization with Autoregressive Reinforcement Learning
-## Introduction
 RNAJog is a tool designed for optimizing the coding sequence (CDS) of mRNA to achieve high protein expression levels. RNAJog can generate codon sequences with high codon adaptation index (CAI) and low minimum free energy (MFE), ensuring enhanced translational efficiency and mRNA stability. This tool enables users to optimize mRNA sequences for their target proteins or existing mRNA sequences. 
 
 Access RNAJog online: [RNAJog Web Application](http://www.csbio.sjtu.edu.cn/bioinf2/RNAJog/)
