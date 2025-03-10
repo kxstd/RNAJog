@@ -1,5 +1,4 @@
 *.log
-/result/*
 /log
 /save/*
 /__MACOSX

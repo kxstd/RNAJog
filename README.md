@@ -10,11 +10,13 @@ If you haven't installed Conda yet, you can install either [Miniconda](https://w
 
 ## Installation
 ``` r
-git clone https://github.com/kxstd/RNAJog
+git clone https://github.com/kxstd/RNAJog.git
 cd RNAJog
 conda env create -f environment.yml
 conda activate rnajog
 ```
+## Download the model parameters
+Download the model parameters from http://www.csbio.sjtu.edu.cn/bioinf2/RNAJog/data/save.zip, and extract it to the RNAJog project directory.
 
 ## Usage
 ### Command-Line Arguments
@@ -22,7 +24,7 @@ The script provides various options to customize the optimization process. Below
 
 | Argument | Type | Default | Description |
 |----------|------|---------|-------------|
-| `--device` | str | `cpu` | Device to use (`cpu` or `cuda`). |
+| `--device` | str | `cuda` | Device to use (`cpu` or `cuda`). |
 | `--seed` | int | `0` | Random seed. |
 | `--model` | str | `RNAJog` | The optimization model (`RNAJog`, `RNAJog_zero`). |
 | `--input_type` | str | `rna` | The type of input (`rna` or `protein`). |
@@ -39,13 +41,13 @@ The script provides various options to customize the optimization process. Below
 To run the RNA optimization script, use the following command:
 
 ```bash
-python main.py --input_type rna --data_path data/test/rna.txt --device cuda --model RNAJog
+python run.py --input_type rna --data_path data/test/rna.txt --device cuda --model RNAJog
 ```
 
 If you want to optimize a protein sequence:
 
 ```bash
-python main.py --input_type protein --data_path data/test/protein.txt --device cuda --model RNAJog
+python run.py --input_type protein --data_path data/test/protein.txt --device cuda --model RNAJog
 ```
 
 ### Output

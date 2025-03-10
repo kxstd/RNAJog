@@ -19,7 +19,7 @@ MFE_MODEL_PATH = {"RNAJog":"./save/rnajog/model.pt",
 
 def parse_args():
     parser = argparse.ArgumentParser(description="RNAJog")
-    parser.add_argument("--device", type=str, default="cpu")
+    parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--model", type=str, default="RNAJog", choices=["RNAJog", "RNAJog_zero"])
     parser.add_argument("--input_type", type=str, default="rna", choices=["rna", "protein"])
