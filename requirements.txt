@@ -1,8 +1,8 @@
 numpy==1.26.4
 pandas==2.2.1
 viennarna
-tokenizers==0.15.2
+tokenizers==0.21.0
 torch==2.2.1
-tqdm==4.66.2
-transformers==4.38.2
+tqdm==4.66.3
+transformers==4.48.0
 omegaconf==2.3.0
