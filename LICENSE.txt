@@ -1,6 +1,6 @@
 RNAJog Software
 Non-Commercial License Agreement
-The RNAAJog code is freely accessible to all interested parties.  It is free for academic, non-profit, and research use, and made available through the Shanghai Jiao Tong University for noncommercial, non-profit use, and can be licensed for commercial use.
+The RNAJog code is freely accessible to all interested parties.  It is free for academic, non-profit, and research use, and made available through the Shanghai Jiao Tong University for noncommercial, non-profit use, and can be licensed for commercial use.
 
 "Software" includes both source and executable copies of the RNAJog software as distributed by Shanghai Jiao Tong University.
 
