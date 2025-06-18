@@ -99,7 +99,7 @@ class Actor(nn.Module):
                 for i in range(memory.shape[0]):
                     for key, value in ban_table.items():
                         prefix, pro_tail = key
-                        if codons[i][-len(prefix):] == prefix and "".join(pro[i][t:]).startswith(pro_tail):       
+                        if codons[i][len(codons[i])-len(prefix):] == prefix and "".join(pro[i][t:]).startswith(pro_tail):       
                             prob[i][value] = 0
                             if prob[i].sum() == 0:
                                 raise ValueError("All codons are banned")
