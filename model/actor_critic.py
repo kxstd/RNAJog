@@ -32,7 +32,7 @@ class Actor_Critic(nn.Module):
         if ban_pro_seqs:
             for ban_pro_seq in ban_pro_seqs:
                 for pro_seq in pro:
-                    if ban_pro_seq in pro_seq:
+                    if ban_pro_seq in "".join(pro_seq):
                         raise ValueError("Protein sequence {} is banned".format(ban_pro_seq))
         embeddings = self.embedder(codons)
         outputs, log_probs = self.actor.optimize(embeddings, pro, length, merge_prob, alpha, sample_method, sample_temperature, ban_codon_table)
