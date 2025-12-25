@@ -15,7 +15,7 @@ from utils.dataset import load_data
 
 
 MFE_MODEL_PATH = {"RNAJog":"./save/rnajog/model.pt",
-                  "RNAJog_zero":"./save/rnajog_zero/model.pt"}
+                  "RNAJog_zero":"./save/rnajog_zero/model500.pt"}
 
 def parse_args():
     parser = argparse.ArgumentParser(description="RNAJog")
