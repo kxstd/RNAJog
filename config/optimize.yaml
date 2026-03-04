@@ -1,0 +1,13 @@
+device: "cpu"
+seed: 0
+mfe_model_path: ./save/codongpt1.3.2/model240.pt
+data_path: ./data/icodon/test_simple_dataset.csv
+max_threads: 32
+weights: 
+  - 1
+  - 0
+
+sample_method: "sample"
+sample_num: 2
+
+

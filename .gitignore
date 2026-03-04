@@ -3,3 +3,5 @@
 /save/*
 /__MACOSX
 */__pycache__
+/result/*
+/utils/__pycache__

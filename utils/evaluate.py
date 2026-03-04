@@ -5,7 +5,16 @@ import time
 import math
 import pandas as pd
 from utils.constant import trans_dict, MASK, id2pro
+import re
 
+def calculate_motif_rate(seqs, ban_seqs):
+    motif_rates = []
+    for seq in seqs:
+        motif_num = 0
+        for ban_seq in ban_seqs:
+            motif_num += len(re.findall(f'(?=({re.escape(ban_seq)}))', seq))
+        motif_rates.append(motif_num / len(seq))
+    return motif_rates
 
 def calculate_mfe(sequence):
     mfe = RNA.fold(sequence)[1]

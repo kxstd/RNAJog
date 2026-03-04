@@ -8,6 +8,7 @@ class Cai_model():
         self.pro2id = pro2id
         self.max_length = 1022
     def calculate_score(self, inputs, length):
+        # cai_score = torch.stack([self.cai_prob_table[pro2id[inputs[i][step]]] for step in range(len(inputs[i]))]).to(x.device)
         cai_list = []
         for i in range(len(inputs)):
             cai_score = [self.cai_prob_table[self.pro2id[inputs[i][step]]] for step in range(length[i])]
